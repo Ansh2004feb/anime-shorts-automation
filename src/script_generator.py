@@ -68,7 +68,7 @@ def generate_script(provider="groq"):
     return json.loads(content.strip())
 
 if __name__ == "__main__":
-    script_data = generate_script("groq")
+    script_data = generate_script("openai")
     
     os.makedirs("outputs", exist_ok=True)
     date_str = time.strftime("%Y-%m-%d")
